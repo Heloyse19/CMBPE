@@ -55,28 +55,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Turva"
-            android:checked="true"/>
+            android:checked="false"/>
 
         <CheckBox
             android:id="@+id/checkBoxVParcial"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Parcial"
-            android:checked="true"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxVTotal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Outro"
-            android:checked="true"/>
+            android:checked="false"/>
 
         <CheckBox
             android:id="@+id/checkBoxVOutro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total"
-            android:checked="true"/>
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outro"
+            android:checked="false"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -91,21 +91,123 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Normal"
-            android:checked="true"/>
+            android:checked="false"/>
 
         <CheckBox
             android:id="@+id/checkBoxPoluido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Poluido"
-            android:checked="true"/>
+            android:checked="false"/>
 
         <CheckBox
             android:id="@+id/checkBoxInospido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Inospido"
-            android:checked="true"/>
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de fundo"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxFCascalho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cascalho"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxFAreia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Areia"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxFPedra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedras"
+            android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxFOutros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outros"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correnteza"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupCorrenteza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioCorrentezaSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:checked="false"
+                android:layout_marginEnd="32dp"/>
+
+            <RadioButton
+                android:id="@+id/radioCorrentezaNao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editCoordenadasLot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lot"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editCoordenadasLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Long"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mergulhadores na água"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editNMergulhadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero de Mergulhadores"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
         <Button
             android:id="@+id/buttonEnviar"

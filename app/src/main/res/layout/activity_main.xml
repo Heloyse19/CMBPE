@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sim"
-                android:checked="true"
+                android:checked="false"
                 android:layout_marginEnd="32dp"/>
 
             <RadioButton
@@ -87,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Evento com pessoas"
-            android:checked="true"/>
+            android:checked="false"/>
 
         <CheckBox
             android:id="@+id/checkBoxEvanimal"
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Evento com objetos"
-            android:checked="true"/>
+            android:checked="false"/>
 
         <CheckBox
             android:id="@+id/checkBoxEvMeioTransporte"

@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +28,21 @@ public class Activity_form2 extends AppCompatActivity {
 
     private CheckBox checkBoxVTotal;
 
+    private CheckBox checkBoxFCascalho;
+
+    private CheckBox checkBoxFAreia;
+
+    private  CheckBox checkBoxFPedra;
+
+    private  CheckBox checkBoxFOutros;
+
+    private RadioGroup radioGroupCorrenteza;
+
+    private EditText editCoordenadasLot;
+    private EditText editCoordenadasLong;
+
+    private  EditText editNMergulhadores;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +58,17 @@ public class Activity_form2 extends AppCompatActivity {
         checkBoxVParcial = findViewById(R.id.checkBoxVParcial);
         checkBoxVTotal = findViewById(R.id.checkBoxVTotal);
         checkBoxVOutro = findViewById(R.id.checkBoxVOutro);
+        checkBoxFOutros = findViewById(R.id.checkBoxFOutros);
+        checkBoxFCascalho = findViewById(R.id.checkBoxFCascalho);
+        checkBoxFAreia = findViewById(R.id.checkBoxFAreia);
+        checkBoxFPedra = findViewById(R.id.checkBoxFPedra);
+        radioGroupCorrenteza = findViewById(R.id.radioGroupCorrenteza);
+        editCoordenadasLot = findViewById(R.id.editCoordenadasLot);
+        editCoordenadasLong = findViewById(R.id.editCoordenadasLong);
+        editNMergulhadores = findViewById(R.id.editNMergulhadores);
+
+
+
 
         buttonEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
