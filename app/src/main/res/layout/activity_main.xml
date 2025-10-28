@@ -96,12 +96,6 @@
             android:text="Evento com animais"/>
 
         <CheckBox
-            android:id="@+id/checkBoxEvCadaver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Módulo de Gestão"/>
-
-        <CheckBox
             android:id="@+id/checkBoxEvObjeto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
