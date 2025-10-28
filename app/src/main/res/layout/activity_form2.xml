@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Activity_form2">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".Activity_form2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulário de Salvamento OPERAÇÕES DE MERGULHO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local de mergulho"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerLocalMergulho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/locaisMergulho"
+            style="@android:style/Widget.Holo.Light.Spinner" />
+
+        <EditText
+            android:id="@+id/editVisibilidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Visibilidade (m)"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVTurva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turva"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVParcial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parcial"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outro"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVOutro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:checked="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambiente"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxANormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxPoluido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poluido"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxInospido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inospido"
+            android:checked="true"/>
+
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"/>
+
+    </LinearLayout>
+
+</ScrollView>

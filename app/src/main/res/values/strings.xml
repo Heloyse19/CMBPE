@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">CBMPE</string>
+
+        <string-array name="locaisMergulho">
+            <item>Selecione uma Opção</item>
+            <item>Mar</item>
+            <item>Rio</item>
+            <item>Lago</item>
+            <item>Barragem</item>
+            <item>Canal</item>
+            <item>Poço</item>
+            <item>Represa, açude ou similar</item>
+            <item>Outro</item>
+        </string-array>
 </resources>

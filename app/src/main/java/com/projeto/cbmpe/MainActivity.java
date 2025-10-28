@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBoxEvArvore;
     private EditText editOutrosDesastres;
     private EditText editNumeroVitimas;
+    private Button buttonFrom2;
     private Button buttonEnviar;
+
 
 
     @Override
@@ -41,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         radioGroupAssociacaoDesastre = findViewById(R.id.radioGroupAssociacaoDesastre);
 
         editTextCodigoDesastre = findViewById(R.id.editCodigoDesastre);
+
+        buttonFrom2 = findViewById(R.id.buttonFrom2);
 
         buttonEnviar = findViewById(R.id.buttonEnviar);
 
@@ -59,6 +64,14 @@ public class MainActivity extends AppCompatActivity {
         editOutrosDesastres = findViewById(R.id.editOutrosDesastres);
 
         editNumeroVitimas = findViewById(R.id.editNumeroVitimas);
+
+        buttonFrom2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navegarDiretoParaFormulario2();;
+            }
+        });
+
 
         buttonEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +127,13 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             Log.i("FORMULARIO_SUCESSO", "Dados prontos para envio!");
+            Intent intent = new Intent(MainActivity.this, Activity_form2.class);
+            startActivity(intent);
         }
     }
+    private void navegarDiretoParaFormulario2() {
+        Intent intent = new Intent(MainActivity.this, Activity_form2.class);
+        startActivity(intent);
+    }
+
 }

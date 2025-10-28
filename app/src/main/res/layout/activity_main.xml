@@ -147,6 +147,12 @@
             android:layout_marginBottom="16dp"/>
 
         <Button
+            android:id="@+id/buttonFrom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="houve operação de mergulho"/>
+
+        <Button
             android:id="@+id/buttonEnviar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
