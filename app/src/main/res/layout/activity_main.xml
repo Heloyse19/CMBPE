@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulário de Atendimento de salvamento"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/editGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grupo"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editCodigoOcorrencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código da classificação da ocorrência"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Associado a desastre?"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupAssociacaoDesastre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioAssociacaoDesastreSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:checked="true"
+                android:layout_marginEnd="32dp"/>
+
+            <RadioButton
+                android:id="@+id/radioAssociacaoDesastreNao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editCodigoDesastre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Codigo do desastre"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxEvPessoas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evento com pessoas"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxEvanimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evento com animais"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxEvCadaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Módulo de Gestão"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxEvObjeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evento com objetos"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxEvMeioTransporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evento com meio de transportes"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxEvArvore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evento com árvores"/>
+
+        <EditText
+            android:id="@+id/editOutrosDesastres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Outros"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de vítimas"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editNumeroVitimas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
