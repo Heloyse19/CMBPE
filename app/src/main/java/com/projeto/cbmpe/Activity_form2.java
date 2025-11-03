@@ -37,11 +37,17 @@ public class Activity_form2 extends AppCompatActivity {
     private  CheckBox checkBoxFOutros;
 
     private RadioGroup radioGroupCorrenteza;
-
     private EditText editCoordenadasLot;
     private EditText editCoordenadasLong;
 
-    private  EditText editNMergulhadores;
+    private EditText editNMergulhadores;
+
+    private Button buttonVoltar;
+
+    private void voltarParaTelaPrincipal() {
+        finish();
+    }
+
 
 
     @Override
@@ -55,14 +61,20 @@ public class Activity_form2 extends AppCompatActivity {
         editCoordenadasLot = findViewById(R.id.editCoordenadasLot);
         editCoordenadasLong = findViewById(R.id.editCoordenadasLong);
         editNMergulhadores = findViewById(R.id.editNMergulhadores);
-
-
+        buttonVoltar = findViewById(R.id.buttonVoltar);
 
 
         buttonEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 lerDadosDoFormulario();
+            }
+        });
+
+        buttonVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                voltarParaTelaPrincipal();
             }
         });
 

@@ -173,6 +173,12 @@
             android:layout_height="wrap_content"
             android:text="Enviar"/>
 
+        <Button
+            android:id="@+id/buttonVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar"/>
+
     </LinearLayout>
 
 </ScrollView>
