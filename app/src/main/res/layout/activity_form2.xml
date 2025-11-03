@@ -50,33 +50,22 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
-        <CheckBox
-            android:id="@+id/checkBoxVTurva"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Turva"
-            android:checked="false"/>
+            android:text="Visibilidade da água"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
 
-        <CheckBox
-            android:id="@+id/checkBoxVParcial"
-            android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/spinnerVisibilidade"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Parcial"
-            android:checked="false"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxVOutro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total"
-            android:checked="false"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxVTotal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Outro"
-            android:checked="false"/>
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/visibilidade"
+            style="@android:style/Widget.Holo.Light.Spinner" />
 
         <TextView
             android:layout_width="match_parent"
@@ -86,26 +75,14 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"/>
 
-        <CheckBox
-            android:id="@+id/checkBoxANormal"
-            android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/spinnerAmbientes"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Normal"
-            android:checked="false"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxPoluido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Poluido"
-            android:checked="false"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxInospido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Inospido"
-            android:checked="false"/>
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/ambientes"
+            style="@android:style/Widget.Holo.Light.Spinner" />
 
         <TextView
             android:layout_width="match_parent"
@@ -115,33 +92,14 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp"/>
 
-        <CheckBox
-            android:id="@+id/checkBoxFCascalho"
-            android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/spinnerFundo"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cascalho"
-            android:checked="false"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxFAreia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Areia"
-            android:checked="false"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxFPedra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pedras"
-            android:checked="false"/>
-
-        <CheckBox
-            android:id="@+id/checkBoxFOutros"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Outros"
-            android:checked="false"/>
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/fundo"
+            style="@android:style/Widget.Holo.Light.Spinner" />
 
         <TextView
             android:layout_width="match_parent"

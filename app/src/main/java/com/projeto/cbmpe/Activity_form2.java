@@ -51,17 +51,6 @@ public class Activity_form2 extends AppCompatActivity {
 
         spinnerLocalMergulho = findViewById(R.id.spinnerLocalMergulho);
         buttonEnviar = findViewById(R.id.buttonEnviar);
-        checkBoxANormal = findViewById(R.id.checkBoxANormal);
-        checkBoxPoluido = findViewById(R.id.checkBoxPoluido);
-        checkBoxInospido = findViewById(R.id.checkBoxInospido);
-        checkBoxVTurva = findViewById(R.id.checkBoxVTurva);
-        checkBoxVParcial = findViewById(R.id.checkBoxVParcial);
-        checkBoxVTotal = findViewById(R.id.checkBoxVTotal);
-        checkBoxVOutro = findViewById(R.id.checkBoxVOutro);
-        checkBoxFOutros = findViewById(R.id.checkBoxFOutros);
-        checkBoxFCascalho = findViewById(R.id.checkBoxFCascalho);
-        checkBoxFAreia = findViewById(R.id.checkBoxFAreia);
-        checkBoxFPedra = findViewById(R.id.checkBoxFPedra);
         radioGroupCorrenteza = findViewById(R.id.radioGroupCorrenteza);
         editCoordenadasLot = findViewById(R.id.editCoordenadasLot);
         editCoordenadasLong = findViewById(R.id.editCoordenadasLong);

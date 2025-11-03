@@ -12,4 +12,28 @@
             <item>Represa, açude ou similar</item>
             <item>Outro</item>
         </string-array>
+
+        <string-array name="visibilidade">
+            <item>Selecione uma Opção</item>
+            <item>Turva</item>
+            <item>Parcial</item>
+            <item>Total</item>
+            <item>Outro</item>
+        </string-array>
+
+        <string-array name="ambientes">
+            <item>Selecione uma Opção</item>
+            <item>Normal</item>
+            <item>Poluído</item>
+            <item>Inóspito</item>
+            <item>Outro</item>
+        </string-array>
+
+        <string-array name="fundo">
+            <item>Selecione uma Opção</item>
+            <item>Cascalho</item>
+            <item>Areia</item>
+            <item>Pedras</item>
+            <item>Outro</item>
+        </string-array>
 </resources>
